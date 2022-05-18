@@ -30,7 +30,7 @@ public class App {
             if(xi != x && inField(xi, y, array)) {
                 System.out.println("Neighbor to " + x + ", " + y + " - " + xi + ", " + y);
                 possibleNeighbours.add(new Coordinates(xi, y));
-            //if arrived at initial x start looking horizontal for neighbours
+            // if arrived at initial x start looking horizontal for neighbours
             } else if (xi == x) {
                 for(int yj = y - 1; yj <= y + 1; yj++) {
                     // don't add yourself and check if coordinates are actually in the grid
